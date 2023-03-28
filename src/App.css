@@ -1,0 +1,30 @@
+.root {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "conversationsMenu activeConversation";
+    grid-template-columns: 1fr 4fr;
+}
+
+.conversationsMenu {
+    grid-area: conversationsMenu;
+    background-color: cadetblue;
+}
+
+.conversations {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.activeConversation {
+    grid-area: activeConversation;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: scroll;
+    background-color: antiquewhite;
+}
